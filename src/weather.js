@@ -16,8 +16,7 @@ async function getWeatherObj(location) {
 }
 
 // Input weather object, receive neccesary data
-async function getWeatherData() {
-  const location = prompt('Choose city: ');
+async function getWeatherData(location) {
   const weatherObject = await getWeatherObj(location);
 
   const weatherData = {
