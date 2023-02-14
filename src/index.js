@@ -1,5 +1,6 @@
 import './reset.css';
 import './style.css';
+import image from './images/loading.svg';
 import { displayForm, formEventHandler } from './form';
 import {
   addAttributeToElem,
@@ -10,7 +11,7 @@ import {
 // Testing...loading svg
 loadElemToContainer('#content', 'img', 'loader');
 
-addAttributeToElem('#loader', 'src', '../src/images/loading.svg');
+addAttributeToElem('#loader', 'src', image);
 
 // Display Title
 loadElemToContainer('#content', 'h1', 'main-title');

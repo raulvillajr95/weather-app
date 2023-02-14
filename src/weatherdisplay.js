@@ -22,7 +22,7 @@ const displayWeather = (weatherObj) => {
   addAttributeToElem(
     '#weather-icon',
     'src',
-    `http://openweathermap.org/img/wn/${weatherObj.icon}@2x.png`
+    `https://openweathermap.org/img/wn/${weatherObj.icon}@2x.png`
   );
 
   // description
