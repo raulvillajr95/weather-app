@@ -5,6 +5,7 @@ import {
   clearDisplay,
 } from './helpers';
 import getWeatherData from './weather';
+import { displayWeather, displayWeatherError } from './weatherdisplay';
 
 // Display full form
 const displayForm = () => {
@@ -24,15 +25,26 @@ const displayForm = () => {
   addAttributeToElem('#submit', 'type', 'submit');
   addAttributeToElem('#submit', 'value', 'Submit');
 };
-displayForm();
 
 // form event handler
-const submit = document.querySelector('#submit');
-const city = document.querySelector('#city');
-submit.addEventListener('click', (event) => {
-  event.preventDefault();
+const formEventHandler = () => {
+  const submit = document.querySelector('#submit');
+  const city = document.querySelector('#city');
+  submit.addEventListener('click', (event) => {
+    event.preventDefault();
 
-  getWeatherData(city.value).then(console.log);
-});
+    clearDisplay('#weather-container');
 
-export default displayForm;
+    getWeatherData(city.value)
+      .then((result) => {
+        displayWeather(result);
+        city.value = '';
+        // console.log('yes')
+      })
+      .catch(() => {
+        displayWeatherError();
+      });
+  });
+};
+
+export { displayForm, formEventHandler };
