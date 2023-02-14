@@ -1,3 +1,4 @@
+import image from './images/loading.svg';
 import {
   loadElemToContainer,
   addAttributeToElem,
@@ -39,8 +40,7 @@ const displayWeatherError = () => {
 
 const loadingScreen = () => {
   loadElemToContainer('#weather-container', 'img', 'load-img');
-
-  addAttributeToElem('#load-img', 'src', '../src/loading.svg');
+  addAttributeToElem('#load-img', 'src', image);
 };
 
 export { displayWeather, displayWeatherError, loadingScreen };

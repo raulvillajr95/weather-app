@@ -1,17 +1,16 @@
 import './reset.css';
 import './style.css';
-import image from './images/loading.svg';
+// import image from './images/loading.svg';
 import { displayForm, formEventHandler } from './form';
 import {
-  addAttributeToElem,
+  // addAttributeToElem,
   addTextToElem,
   loadElemToContainer,
 } from './helpers';
 
-// Testing...loading svg
-loadElemToContainer('#content', 'img', 'loader');
-
-addAttributeToElem('#loader', 'src', image);
+// // Testing...loading svg
+// loadElemToContainer('#content', 'img', 'loader');
+// addAttributeToElem('#loader', 'src', image);
 
 // Display Title
 loadElemToContainer('#content', 'h1', 'main-title');
@@ -24,6 +23,7 @@ loadElemToContainer('#content', 'div', 'weather-container');
 
 /**
  * fix loader
+ *  see exactly how it is on github rn cause it works, but i modified this one
  * git push THEN gh-pages
  *  so the branches wont be out of sync
  *
