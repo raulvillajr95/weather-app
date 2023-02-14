@@ -14,8 +14,6 @@ loadElemToContainer('#content', 'div', 'weather-container');
 
 /**
  * fix ui
- *  button is circle on ios
- *
  * git push THEN gh-pages
  *  so the branches wont be out of sync
  *
