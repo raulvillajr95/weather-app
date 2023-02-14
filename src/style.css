@@ -9,13 +9,15 @@ html {
 }
 
 #content {
-  height: 100%;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
   font-family: Arial, Helvetica, sans-serif;
   color: #f3f3f3;
+  position: absolute;
+  bottom: 0;
+  top: 0;
 
   background: linear-gradient(
     transparent 82%,
