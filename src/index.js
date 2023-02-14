@@ -13,7 +13,7 @@ formEventHandler();
 loadElemToContainer('#content', 'div', 'weather-container');
 
 /**
- * fix ui
+ * fix ui height
  * git push THEN gh-pages
  *  so the branches wont be out of sync
  *
