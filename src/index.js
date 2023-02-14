@@ -13,7 +13,11 @@ formEventHandler();
 loadElemToContainer('#content', 'div', 'weather-container');
 
 /**
+ * fix ui
+ *  button is circle on ios
  *
+ * git push THEN gh-pages
+ *  so the branches wont be out of sync
  *
  * notes:
  *  setup blank html, js, & css all linked up ✅
@@ -22,6 +26,6 @@ loadElemToContainer('#content', 'div', 'weather-container');
  *  set up simple form, input location and fetch weather info, clg for now ✅
  *  display information, no more clg ✅
  *  add css ✅
- *  add loading screen while the api is fetching
+ *  add loading screen while the api is fetching ✅
  *
  */
