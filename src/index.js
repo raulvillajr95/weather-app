@@ -1,5 +1,6 @@
 import './reset.css';
 import './style.css';
+import loadingImage from './loading.svg';
 import { displayForm, formEventHandler } from './form';
 import { addTextToElem, loadElemToContainer } from './helpers';
 
