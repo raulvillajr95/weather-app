@@ -17,14 +17,6 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
-      {
-        test: /\.svg$/,
-        type: 'asset',
-        loader: 'svgo-loader',
-        options: {
-          configFile: './svgo.config.js',
-        },
-      },
     ],
   },
 };
