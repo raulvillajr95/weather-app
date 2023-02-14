@@ -21,13 +21,7 @@ loadElemToContainer('#content', 'div', 'weather-container');
  *  write functions that take full data and return only data needed ✅
  *  set up simple form, input location and fetch weather info, clg for now ✅
  *  display information, no more clg ✅
- *  add css.
- *    space things out
- *    details, colors, borders, etc.
- *    in js adjust it to night/day background
- *    addjust pics for temperature and conditions
- *      use giphy if needed
- *    css for error page too
+ *  add css ✅
  *  add loading screen while the api is fetching
  *
  */

@@ -11,9 +11,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: #f3f3f3;
 
-  background: rgb(2, 0, 36);
   background: linear-gradient(
-    #141414 82%,
+    transparent 82%,
     rgba(81, 81, 138, 1) 88%,
     rgba(0, 212, 255, 1) 100%
   );
@@ -80,19 +79,14 @@ body {
 }
 #weather-container #city-title {
   font-size: 2rem;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   color: white;
 }
 #weather-container #temperature {
   font-size: 5rem;
-  text-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
 #weather-container #weather-icon {
   height: 12rem;
-
-  /* background-color: red; */
 }
 #weather-container #description {
   font-size: 1.4rem;
-  text-shadow: 0 0 10px 0 black;
 }

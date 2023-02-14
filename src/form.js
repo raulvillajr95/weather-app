@@ -5,7 +5,11 @@ import {
   clearDisplay,
 } from './helpers';
 import getWeatherData from './weather';
-import { displayWeather, displayWeatherError } from './weatherdisplay';
+import {
+  displayWeather,
+  displayWeatherError,
+  loadingScreen,
+} from './weatherdisplay';
 
 // Display full form
 const displayForm = () => {
@@ -34,13 +38,14 @@ const formEventHandler = () => {
   submit.addEventListener('click', (event) => {
     event.preventDefault();
 
+    // loading screen
     clearDisplay('#weather-container');
+    loadingScreen();
 
     getWeatherData(city.value)
       .then((result) => {
         displayWeather(result);
         city.value = '';
-        // console.log('yes')
       })
       .catch(() => {
         displayWeatherError();
