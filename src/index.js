@@ -1,8 +1,15 @@
 import './reset.css';
 import './style.css';
-import loadingImage from './loading.svg';
+import image from './loading.svg';
 import { displayForm, formEventHandler } from './form';
-import { addTextToElem, loadElemToContainer } from './helpers';
+import {
+  addAttributeToElem,
+  addTextToElem,
+  loadElemToContainer,
+} from './helpers';
+
+loadElemToContainer('#content', 'img', 'loader');
+addAttributeToElem('#loader', 'src', '../src/loading.svg');
 
 // Display Title
 loadElemToContainer('#content', 'h1', 'main-title');

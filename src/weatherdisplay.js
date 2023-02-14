@@ -39,6 +39,7 @@ const displayWeatherError = () => {
 
 const loadingScreen = () => {
   loadElemToContainer('#weather-container', 'img', 'load-img');
+
   addAttributeToElem('#load-img', 'src', '../src/loading.svg');
 };
 
