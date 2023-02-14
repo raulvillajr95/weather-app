@@ -12,13 +12,14 @@ const displayForm = () => {
   // main for element
   loadElemToContainer('#content', 'form', 'main-form');
 
-  // city
+  // city(label & input in div)
   loadElemToContainer('#main-form', 'label', 'city-label');
   addTextToElem('#city-label', 'City');
   addAttributeToElem('#city-label', 'for', 'city');
   loadElemToContainer('#main-form', 'input', 'city');
   addAttributeToElem('#city', 'type', 'text');
   addAttributeToElem('#city', 'name', 'city');
+  addAttributeToElem('#city', 'placeholder', 'Enter city');
 
   // submit
   loadElemToContainer('#main-form', 'input', 'submit');

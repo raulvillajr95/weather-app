@@ -1,7 +1,11 @@
-import './style.css';
 import './reset.css';
+import './style.css';
 import { displayForm, formEventHandler } from './form';
-import { loadElemToContainer } from './helpers';
+import { addTextToElem, loadElemToContainer } from './helpers';
+
+// Display Title
+loadElemToContainer('#content', 'h1', 'main-title');
+addTextToElem('#main-title', 'The Weather App');
 
 displayForm();
 formEventHandler();
@@ -17,13 +21,9 @@ loadElemToContainer('#content', 'div', 'weather-container');
  *  write functions that take full data and return only data needed ✅
  *  set up simple form, input location and fetch weather info, clg for now ✅
  *  display information, no more clg ✅
- *    create function that displays the data
- *      add that function inside .then() taking in the obj result
- *    create function that clears current weather displayed
- *    handle errors
- *      something simple like "please enter a valid city"
  *  add css.
- *    nicely improved css
+ *    space things out
+ *    details, colors, borders, etc.
  *    in js adjust it to night/day background
  *    addjust pics for temperature and conditions
  *      use giphy if needed
